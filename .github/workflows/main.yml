@@ -25,7 +25,7 @@ jobs:
     needs: ecr_login
     runs-on: ubuntu-latest
     container:
-      image: ACCOUNT_ID.dkr.ecr.REGION.amazonaws.com/IMAGE:TAG
+      image: 712324673482.dkr.ecr.REGION.amazonaws.com/IMAGE:TAG
       credentials:
         username: AWS
         password: ${{ needs.ecr_login.outputs.ecr_password }}
