@@ -18,14 +18,14 @@ jobs:
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_DEFAULT_REGION: us-west-2
+          AWS_DEFAULT_REGION: us-east-1
         run: echo "::set-output name=ecr_password::$(aws ecr get-login-password)"
 
   test:
     needs: ecr_login
     runs-on: ubuntu-latest
     container:
-      image: 712324673482.dkr.ecr.REGION.amazonaws.com/IMAGE:TAG
+      image: 712324673482.dkr.ecr.REGION.amazonaws.com/gitops-argocd:latest
       credentials:
         username: AWS
         password: ${{ needs.ecr_login.outputs.ecr_password }}
