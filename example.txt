@@ -1,1 +1,2 @@
 https://github.com/Skandalik/save-secret
+https://blog.devops.dev/deploy-to-amazon-eks-using-github-actions-packages-easy-way-out-70b153f04e38
