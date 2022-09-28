@@ -3,4 +3,6 @@ https://blog.devops.dev/deploy-to-amazon-eks-using-github-actions-packages-easy-
 
 https://github.com/koslib/helm-eks-action
 
+https://docs.github.com/en/packages/managing-github-packages-using-github-actions-workflows/publishing-and-installing-a-package-with-github-actions
+
 
