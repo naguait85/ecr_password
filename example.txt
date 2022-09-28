@@ -6,3 +6,5 @@ https://github.com/koslib/helm-eks-action
 https://docs.github.com/en/packages/managing-github-packages-using-github-actions-workflows/publishing-and-installing-a-package-with-github-actions
 
 
+https://www.prestonlamb.com/blog/creating-a-docker-image-with-github-actions
+
