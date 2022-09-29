@@ -8,3 +8,7 @@ https://docs.github.com/en/packages/managing-github-packages-using-github-action
 
 https://www.prestonlamb.com/blog/creating-a-docker-image-with-github-actions
 
+
+
+kubectl patch app APPNAME  -p '{"metadata": {"finalizers": ["resources-finalizer.argocd.argoproj.io"]}}' --type merge
+kubectl delete app APPNAME
